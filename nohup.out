@@ -1,0 +1,166 @@
+10:17:28.924 [main] INFO com.handson.training.example.TrainingJavaApp - Starting Demo Training JavaBasedApp 
+LOGBACK: No context given for c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1843289228
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.1.RELEASE)
+
+10:17:30.254 [main] INFO  c.h.training.example.TrainingJavaApp - Starting TrainingJavaApp v0.0.1-SNAPSHOT on ubuntu with PID 6644 (/home/ubuntu/java-springboot-sample-app/target/jenkin-java-training-0.0.1-SNAPSHOT.jar started by ubuntu in /home/ubuntu/java-springboot-sample-app)
+10:17:30.255 [main] INFO  c.h.training.example.TrainingJavaApp - No active profile set, falling back to default profiles: default
+10:17:32.370 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:17:32.370 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.36]
+10:17:32.527 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:17:33.605 [main] INFO  c.h.training.example.TrainingJavaApp - Started TrainingJavaApp in 4.35 seconds (JVM running for 5.179)
+10:17:43.724 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:17:43.814 [http-nio-8081-exec-1] INFO  c.h.t.e.controller.WebPageController - <html>
+<head>
+<style>
+.center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+table, th, td {
+  border: 1px solid blue;
+  border-collapse: collapse;
+  background-color: cornsilk;
+    width:30%;
+
+
+}
+th, td {
+  padding: 7px;
+  text-align: left;
+    color: black;
+
+}
+h1{
+    text-align: center;
+    border:1px;
+    background-color:skyblue;
+    border-radius:20px;
+}
+p{
+    text-align:center;
+    font-size:24px;
+    font-family: Calibri;
+
+}
+
+</style>
+</head>
+<body>
+<h1>Welcome to Java DevOps Training</b></h1>
+<p>Find below <b>Trainee Name</b>, <b> Date/Time</b> with <b>Host Name</b> where application is deployed:<p>
+<table class="center">
+    <tr>
+        <th>Trainee name</th>
+        <td style="text-transform:capitalize">$userName</td>
+    </tr>
+    <tr>
+        <th>Date</th>
+        <td>$date</td>
+    </tr>
+    <tr>
+        <th>Time</th>
+        <td>$time</td>
+    </tr>
+    <tr>
+        <th>Host Name</th>
+        <td>$hostName</td>
+    </tr>
+
+</table>
+</body>
+</html>
+
+10:21:29.967 [http-nio-8081-exec-5] INFO  c.h.t.e.controller.WebPageController - <html>
+<head>
+<style>
+.center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+table, th, td {
+  border: 1px solid blue;
+  border-collapse: collapse;
+  background-color: cornsilk;
+    width:30%;
+
+
+}
+th, td {
+  padding: 7px;
+  text-align: left;
+    color: black;
+
+}
+h1{
+    text-align: center;
+    border:1px;
+    background-color:skyblue;
+    border-radius:20px;
+}
+p{
+    text-align:center;
+    font-size:24px;
+    font-family: Calibri;
+
+}
+
+</style>
+</head>
+<body>
+<h1>Welcome to Java DevOps Training</b></h1>
+<p>Find below <b>Trainee Name</b>, <b> Date/Time</b> with <b>Host Name</b> where application is deployed:<p>
+<table class="center">
+    <tr>
+        <th>Trainee name</th>
+        <td style="text-transform:capitalize">$userName</td>
+    </tr>
+    <tr>
+        <th>Date</th>
+        <td>$date</td>
+    </tr>
+    <tr>
+        <th>Time</th>
+        <td>$time</td>
+    </tr>
+    <tr>
+        <th>Host Name</th>
+        <td>$hostName</td>
+    </tr>
+
+</table>
+</body>
+</html>
+
+11:01:44.653 [http-nio-8081-exec-8] INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in the HTTP protocol [HTTP/1.10x0aHost:]
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:560)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:260)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+11:25:07.586 [http-nio-8081-exec-5] INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x000xee0x010x000x000xea0x030x03R0xfe0xf370xb60x9f0x910xd80x14v0xd10x990xa00xf7NZ0xb3G0xe4U0xd90x880x96g0xe90xb2Z0xe50x8f0xb40xe6P]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:418)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:260)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
