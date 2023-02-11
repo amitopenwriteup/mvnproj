@@ -17,6 +17,14 @@ pipeline{
                 git branch: 'main', credentialsId: 'git-repo-creds', url: 'git@github.com:devopstrainee001/java-devops-sample-app-boot-camp.git'
             }
         }
+        stage('Compiling and Running Test Cases') {
+            steps {
+                  sh 'mvn clean'
+           	  sh 'mvn compile'
+                  sh 'mvn test'
+            }
+       }
+
      }
  } 
 
