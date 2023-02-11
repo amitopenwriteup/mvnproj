@@ -12,9 +12,9 @@ pipeline{
                sh 'sudo apt install -y wget tree unzip openjdk-11-jdk maven'
            }
          }
-        stage ('Third stage'){
+        stage ('Download Java Code'){
             steps{
-                echo "Third Stage"
+                git branch: 'main', credentialsId: 'git-repo-creds', url: 'git@github.com:devopstrainee001/java-devops-sample-app-boot-camp.git'
             }
         }
      }
