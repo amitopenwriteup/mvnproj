@@ -24,6 +24,12 @@ pipeline{
                   sh 'mvn test'
             }
        }
+       stage('Creating Package') {
+           steps {
+           	   sh 'mvn package'
+       }
+   }
+
 
      }
  } 
