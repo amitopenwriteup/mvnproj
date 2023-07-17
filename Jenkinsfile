@@ -3,8 +3,8 @@ agent any
 stages {
 stage('Installing Maven') {
 steps {
-sh 'apt-get update -y && sudo apt-get upgrade -y'
-sh 'apt-get install -y wget tree unzip maven'
+sh 'sudo apt-get update -y && sudo apt-get upgrade -y'
+sh 'sudo apt-get install -y wget tree unzip maven'
 }
 }
 stage('Compiling and Running Test Cases') {
