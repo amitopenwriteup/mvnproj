@@ -28,10 +28,7 @@ pipeline {
 
   post {
     always {
-      cucumber generateReport: true,
-               jsonReportDirectory: 'target/cucumber-reports',
-               fileIncludePattern: '**/*.json',
-               parallelTesting: false
+    cucumber buildStatus: 'null', customCssFiles: '', customJsFiles: '', failedFeaturesNumber: -1, failedScenariosNumber: -1, failedStepsNumber: -1, fileIncludePattern: '**/*.json', jsonReportDirectory: 'target/cucumber-reports', pendingStepsNumber: -1, reportTitle: 'report', skippedStepsNumber: -1, sortingMethod: 'ALPHABETICAL', undefinedStepsNumber: -1
     }
   }
 }
