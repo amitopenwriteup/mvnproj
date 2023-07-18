@@ -10,7 +10,7 @@ pipeline {
       }
     }
 
-    stage('Generating Cucumber Reports') {
+    stage('Generating a Cucumber Reports') {
       steps {
         script {
           // Run Cucumber tests and generate reports
