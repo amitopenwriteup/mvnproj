@@ -42,12 +42,7 @@ sh '. /etc/profile.d/sonar-scanner.sh'
 }
 stage ('Analyzing Code Quality') {
 steps {
-sh '/opt/sonar-scanner/bin/sonar-scanner
--Dsonar.projectKey=amitopenwriteup_mvnproj
--Dsonar.organization=amit -Dsonar.qualitygate.wait=true
--Dsonar.qualitygate.timeout=300 -Dsonar.sources=src/main/java/
--Dsonar.java.binaries=target/classes -Dsonar.host.url=https://sonarcloud.io
--Dsonar.login=5e608b307d89c17066fe612b7ad418857b10c5f8'
+sh '/opt/sonar-scanner/bin/sonar-scanner -Dsonar.projectKey=amitopenwriteup_mvnproj -Dsonar.organization=amit -Dsonar.qualitygate.wait=true -Dsonar.qualitygate.timeout=300 -Dsonar.sources=src/main/java/ -Dsonar.java.binaries=target/classes -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=5e608b307d89c17066fe612b7ad418857b10c5f8'
 }
 }
 
