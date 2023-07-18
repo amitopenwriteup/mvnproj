@@ -24,6 +24,11 @@ pipeline {
         sh 'mvn package'
       }
     }
+  stage('genrerate report'){
+     steps {
+      sh 'mvn verify'
+    }
+  }
   }
 
   post {
