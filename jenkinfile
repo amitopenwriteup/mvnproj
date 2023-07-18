@@ -1,0 +1,23 @@
+pipeline {
+  agent any
+  stages {
+    stage('Compiling and Running Test Cases') {
+      steps {
+        sh 'mvn clean'
+        sh 'mvn compile'
+        sh 'mvn test'
+      }
+    }
+    stage('Creating Package') {
+      steps {
+        sh 'mvn package'
+      }
+    }
+    stage('Generate Cucumber Report') {
+      steps {
+        sh 'mvn io.github.alexandregv.cucumber-reporting:cucumber-reporting:5.5.0:create'
+      }
+    }
+  }
+}
+
